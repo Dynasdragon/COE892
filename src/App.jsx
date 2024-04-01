@@ -1,0 +1,10 @@
+// src/App.js
+import Routers from './Routes';
+
+const App = () => {
+    return (
+        <Routers />
+    );
+}
+
+export default App; 
