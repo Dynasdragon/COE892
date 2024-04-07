@@ -41,7 +41,7 @@ const Canvas = ({map, rover, mines}) => {
         const mineCanvasX = (mineObj.x*squareSizePx)+mineGridOffset, mineCanvasY = (mineObj.y*squareSizePx)+mineGridOffset;
         
         const mineImg = new Image();
-        mineImg.src = roverLogo;
+        mineImg.src = 'https://cdn-icons-png.flaticon.com/32/9921/9921463.png';
         context.drawImage(mineObj.img, mineCanvasX, mineCanvasY, roverImage.width, roverImage.height);
       }
     }
