@@ -110,7 +110,7 @@ function App() {
           }
           break;
         default:
-          enqueueSnackbar('Use \'A\' and \'D\' to turn the rover and \'D\' to move rover forward, press Spacebar to demine', {variant: 'info'})
+          enqueueSnackbar('Use \'A\' and \'D\' to turn the rover and \'W\' to move rover forward, press Spacebar to demine', {variant: 'info'})
           break;
       }
     }
