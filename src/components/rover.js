@@ -1,3 +1,4 @@
+import roverLogo from '../assets/rover-64px.png'
 class Rover {
   constructor(id, x, y) {
     this.id = id;
@@ -6,7 +7,7 @@ class Rover {
     this.direction = 1;  //Cardinal direction: 0,1,2,3 = N,E,S,W
     this.status = 3;     // 1,2,3,4 = NotStarted, Finished, Moving, Eliminated
     this.img = new Image();
-    this.img.src = 'https://cdn-icons-png.flaticon.com/32/8966/8966771.png';
+    this.img.src = roverLogo;
   }
 
   move(cmd) {
