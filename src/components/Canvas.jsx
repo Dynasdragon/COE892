@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import roverLogo from './assets/rover-64px.png'
+import roverLogo from '../assets/rover-64px.png'
 const Canvas = ({map, rover, mines}) => {
   const canvasRef = useRef(null);
   const gridWidthX = map[0].length, gridWidthY = map.length;
