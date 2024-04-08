@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-
+import mineImg from '../assets/mine.png'
 const Canvas = ({map, rover, mines}) => {
   const canvasRef = useRef(null);
   const gridWidthX = map[0].length, gridWidthY = map.length;
@@ -41,7 +41,7 @@ const Canvas = ({map, rover, mines}) => {
         const mineCanvasX = (mineObj.x*squareSizePx)+mineGridOffset, mineCanvasY = (mineObj.y*squareSizePx)+mineGridOffset;
 
         const mineImg = new Image();
-        mineImg.src = 'https://cdn-icons-png.flaticon.com/32/9921/9921463.png';
+        mineImg.src = mineImg;
         context.drawImage(mineObj.img, mineCanvasX, mineCanvasY, roverImage.width, roverImage.height);
       }
     }
