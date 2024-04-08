@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import roverLogo from '../assets/rover-64px.png'
+
 const Canvas = ({map, rover, mines}) => {
   const canvasRef = useRef(null);
   const gridWidthX = map[0].length, gridWidthY = map.length;
@@ -39,19 +39,19 @@ const Canvas = ({map, rover, mines}) => {
       if(mineObj.isActive) {
         const mineGridOffset = roverGridOffset*0.56;
         const mineCanvasX = (mineObj.x*squareSizePx)+mineGridOffset, mineCanvasY = (mineObj.y*squareSizePx)+mineGridOffset;
-        
+
         const mineImg = new Image();
         mineImg.src = 'https://cdn-icons-png.flaticon.com/32/9921/9921463.png';
         context.drawImage(mineObj.img, mineCanvasX, mineCanvasY, roverImage.width, roverImage.height);
       }
     }
-    
+
     // Draw Rover if alive
     if (rover.status != 4) {
       context.imageSmoothingEnabled = false;
       // context.setTransform(1, 0, 0, 1, 0, 0); // sets scale and origin
       // context.rotate(Math.PI*4);
-      
+
 
       const roverCanvasX = (rover.x*squareSizePx)+roverGridOffset, roverCanvasY = (rover.y*squareSizePx)+roverGridOffset;
       //context.drawImage(roverImage, roverCanvasX, roverCanvasY, roverImage.width, roverImage.height);
@@ -65,7 +65,7 @@ const Canvas = ({map, rover, mines}) => {
     }
 
 
-    
+
   }
 
   useEffect(() => {
