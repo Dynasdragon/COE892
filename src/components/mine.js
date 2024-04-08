@@ -1,3 +1,4 @@
+import mineImg from '../assets/mine.png'
 class Mine {
     constructor(id, x, y, msn) {
         this.id = id;
@@ -6,7 +7,7 @@ class Mine {
         this.msn = msn;
         this.isActive = true;
         this.img = new Image();
-        this.img.src = 'https://cdn-icons-png.flaticon.com/32/9921/9921463.png';
+        this.img.src = mineImg;
     }
 }
 
