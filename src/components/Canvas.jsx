@@ -42,6 +42,8 @@ const Canvas = ({map, rover, mines}) => {
 
         const mineImg = new Image();
         mineImg.src = mineImg;
+        mineImg.width = 32;
+        mineImg.height = 32;
         context.drawImage(mineObj.img, mineCanvasX, mineCanvasY, roverImage.width, roverImage.height);
       }
     }
